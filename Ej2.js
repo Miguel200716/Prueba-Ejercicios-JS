@@ -1,12 +1,48 @@
-const prompt=require("prompt-sync")();
+const prompt = require("prompt-sync")();
+/*Escribe una función en que dibuje una pirámide invertida en pantalla como la de la figura. La altura se pasará como parámetro.
+ Si se pasa una altura =0 o negativa, la función devolverá –1; en caso contrario devolverá 0 (éxito) y pintará la pirámide. Ejemplo
+ altura 5:*/
+let altura = prompt('Introduzca una altura: ');
+PiramideInvertida(altura);
 
-let n=prompt("Dame la altua de la piramide");
-n=Number(n);
-for(let i=0;i<n;i++){
-    for(let j;j<n;j++){
-         console.log(" ");
-         
+
+function PiramideInvertida(altura) {
+
+
+    let ancho = altura;
+
+
+    if (altura > 0) {
+        console.log("0, éxito");
+        console.log(); 
+
+
+        for (let fila = 1; fila <= altura; fila++) {
+
+
+            let espacios = "";
+            let estrellas = "";
+
+
+            for (let esp = 1; esp < fila; esp++) {
+                espacios += " ";
+            }
+
+
+            for (let est = 1; est < ancho * 2; est++) {
+                estrellas += "*";
+            }
+
+
+            console.log(espacios + estrellas);
+            ancho--;
+        }
+
+
+    } else {
+        console.log(-1);
     }
-    process.stdout.write("*");
- 
+
+
+    console.log();
 }
