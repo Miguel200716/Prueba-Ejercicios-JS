@@ -14,7 +14,7 @@ function PiramideInvertida(altura) {
 
     if (altura > 0) {
         console.log("0, éxito");
-        console.log(); // Salto de línea
+        console.log(); 
 
 
         for (let fila = 1; fila <= altura; fila++) {
@@ -44,5 +44,5 @@ function PiramideInvertida(altura) {
     }
 
 
-    console.log(); // Salto final
+    console.log();
 }

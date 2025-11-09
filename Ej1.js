@@ -38,7 +38,7 @@ if (totalPersonas > 0) {
         }
 
 
-        // Inicialización de min y max en la primera iteración
+        
         if (persona === 1) {
             minimoHijos = hijos;
             maximoHijos = hijos;
