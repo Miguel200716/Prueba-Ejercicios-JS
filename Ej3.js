@@ -13,7 +13,7 @@ vuelve a pedir el valor.
 
 comprobarValor(numeroUsuario, numeroCorrecto): comprueba si el número es correcto; éste  
 devuelve un número que puede ser:  0: los dos numeros son iguales  1: el numeroUsuario es mayor que 
-el numeroCorrecto  -1: el numeroUsuario es menor que el numeroCorrecto.*/
+el numeroCorrecto  -1: el numeroUsuario es menor que el numeroCorrecto..*/
 
 let numeroSecreto = 62;
 solicitarNumero(numeroSecreto);
